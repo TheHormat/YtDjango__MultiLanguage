@@ -1,0 +1,21 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    {% trans "Salam, xoş gəldiniz !" %}
+    <p style="color: red;"> {% trans "Mənim adım Hörmətdir" %} </p>
+
+    <div class="buttons">
+        <a href="{% url 'set-language' 'tr' %}">TR</a>
+        <a href="{% url 'set-language' 'az' %}">AZ</a>
+    </div>
+</body>
+
+</html>
