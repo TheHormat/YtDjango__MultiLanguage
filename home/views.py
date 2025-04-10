@@ -6,10 +6,17 @@ from django.urls.base import resolve, reverse
 from django.urls.exceptions import Resolver404
 from django.utils import translation
 
+from .models import Book
+
 
 # Create your views here.
 def home__view(request):
     return render(request, "index.html")
+
+
+def book__view(request):
+    books = Book.objects.all()
+    return render(request, "book.html", {"books":books})
 
 
 def set_language(request, language):

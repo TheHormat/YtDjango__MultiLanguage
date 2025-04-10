@@ -20,7 +20,11 @@ from django.urls import path
 from django.conf.urls.i18n import i18n_patterns
 from home import views
 
-urlpatterns = [path("admin/", admin.site.urls), path("", views.home__view, name="home")]
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", views.home__view, name="home"),
+    path("book/", views.book__view, name="book"),
+]
 urlpatterns = [
     *i18n_patterns(*urlpatterns, prefix_default_language=False),
     path("set_language/<str:language>", views.set_language, name="set-language"),

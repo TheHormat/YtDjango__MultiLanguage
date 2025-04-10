@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-08 00:12+0400\n"
+"POT-Creation-Date: 2025-04-11 01:46+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: core/settings.py:121
+#: core/settings.py:122
 msgid "Azerbaijani"
 msgstr ""
 
-#: core/settings.py:122
+#: core/settings.py:123
 msgid "Turkish"
 msgstr ""
+
+#: templates/book.html:12
+msgid "Mənim kitablarım"
+msgstr "Benim kitaplarım"
+
+#: templates/book.html:16
+msgid "Ad"
+msgstr "İsim"
+
+#: templates/book.html:17
+msgid "Yazar"
+msgstr ""
+
+#: templates/book.html:18
+msgid "Haqqında"
+msgstr "Hakkında"
+
+#: templates/book.html:19
+msgid "Qiymət"
+msgstr "Fiyat"
 
 #: templates/index.html:12
 msgid "Salam, xoş gəldiniz !"

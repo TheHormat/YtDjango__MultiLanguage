@@ -1,0 +1,31 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>{% trans "Mənim kitablarım" %}: </h2>
+
+    {% for book in books %}
+        <ul>
+            <li>{% trans "Ad" %}: {{book.name}}</li>
+            <li>{% trans "Yazar" %}: {{book.author}}</li>
+            <li>{% trans "Haqqında" %}: {{book.description}}</li>
+            <li>{% trans "Qiymət" %}: {{book.price}}</li>
+            <hr>
+        </ul>
+    {% endfor %}
+
+
+    <div class="buttons">
+        <a href="{% url 'set-language' 'tr' %}">TR</a>
+        <a href="{% url 'set-language' 'az' %}">AZ</a>
+    </div>
+</body>
+
+</html>
